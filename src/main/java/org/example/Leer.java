@@ -3,7 +3,16 @@ package org.example;
 import java.util.Scanner;
 import java.util.regex.PatternSyntaxException;
 
+/**
+ * Documentado por Victor
+ */
 public class Leer {
+
+	/**
+	 * Lee un entero
+	 * @param texto Texto que se muestra al usuario
+	 * @return El entero que ha introducido el usuario
+	 */
 	public static int entero(String texto) {
 		int valor;
 		String var;
@@ -19,6 +28,11 @@ public class Leer {
 		}
 	}
 
+	/**
+	 * Lee una cadena
+	 * @param texto Texto que se muestra al usuario
+	 * @return La cadena que ha introducido el usuario
+	 */
 	public static String cadena(String texto) {
 		Scanner teclado = new Scanner(System.in);
 		String valor;
@@ -27,6 +41,12 @@ public class Leer {
 		return valor;
 	}
 
+	/**
+	 * Lee una cadena con una expresión regular
+	 * @param regex Expresión regular
+	 * @param texto Texto que se muestra al usuario
+	 * @return La cadena que ha introducido el usuario
+	 */
 	public static String cadena(String regex, String texto) {
 		Scanner teclado = new Scanner(System.in);
 		String valor;
@@ -44,7 +64,12 @@ public class Leer {
 		}
 		return valor;
 	}
-	
+
+	/**
+	 * Lee un real
+	 * @param texto Texto que se muestra al usuario
+	 * @return El real que ha introducido el usuario
+	 */
 	public static float real(String texto) {
 		float valor;
 		String var;
@@ -61,6 +86,11 @@ public class Leer {
 		
 	}
 
+	/**
+	 * Lee un doble
+	 * @param texto Texto que se muestra al usuario
+	 * @return El doble que ha introducido el usuario
+	 */
 	public static double doble(String texto) {
 		double valor;
 		String var;
@@ -76,6 +106,11 @@ public class Leer {
 		}
 	}
 
+	/**
+	 * Muestra un menú
+	 * @param menu Array con las opciones del menú
+	 * @return La opción que ha elegido el usuario
+	 */
 	public static int menu(String[] menu) {
 		int opcion = -1;
 		for (int i = 1; i < menu.length; i++) {

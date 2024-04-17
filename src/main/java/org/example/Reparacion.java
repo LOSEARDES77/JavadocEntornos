@@ -4,6 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
 
+
+/**
+ * Documentado por Victor
+ */
+
 public class Reparacion {
 
 	private int numero;
@@ -17,6 +22,13 @@ public class Reparacion {
 	private static Util<String> p = new Util<>();
 	private static Util<Float> f = new Util<>();
 
+	/**
+	 * Tiene checks si la fecha, el coche o la descripcion son nulos o están vacios
+	 * @param descripcion Descripción de la reparación
+	 * @param coche Coche que se va a reparar
+	 * @param fecha Fecha de la reparación
+	 * @throws ObjetoErroneo Si la fecha, el coche o la descripcion son nulos o están vacios
+	 */
 	public Reparacion(String descripcion, Vehiculo coche, Calendar fecha) throws ObjetoErroneo {
 		this.descripcion = descripcion;
 		this.coche = coche;
@@ -40,6 +52,12 @@ public class Reparacion {
 		this.descripcion = descripcion;
 	}
 
+	/**
+	 * Agrega piezas a la reparación
+	 * @param pieza Nombre de la pieza
+	 * @param precio Precio de la pieza
+	 * @return true si se ha añadido la pieza, false si no se ha añadido
+	 */
 	public boolean agregaPiezas(String pieza, float precio) {
 		if (!cerrado && pieza != null && pieza.trim().length() > 0 && precio >= 0.0) {
 			piezas = p.inserta(piezas, pieza);
@@ -53,6 +71,7 @@ public class Reparacion {
 		cerrado = true;
 	}
 
+
 	@Override
 	public String toString() {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd - MMMMM - yyyy");
@@ -60,7 +79,11 @@ public class Reparacion {
 				+ ", precios=" + Arrays.toString(precios) + ", coche=" + coche + ", fecha=" + sdf.format(fecha.getTime()) + ", cerrado="
 				+ cerrado + "]";
 	}
-	
+
+	/**
+	 * Muestra la reparación
+	 * @return La reparación
+	 */
 	public String listado() {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd - MMMMM - yyyy");
 		String texto = "";

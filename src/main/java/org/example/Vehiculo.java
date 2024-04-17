@@ -1,5 +1,9 @@
 package org.example;
 
+/**
+ * Documentado por Victor
+ */
+
 public abstract class Vehiculo {
 
 	private String matricula;
@@ -7,6 +11,15 @@ public abstract class Vehiculo {
 	private String modelo;
 	private Cliente propietario;
 
+
+	/**
+	 * Tiene checks si la matricula o el modelo son nulos o estan vacios
+	 * @param matricula Matrícula del coche (ej. 2938GFJ)
+	 * @param marca Marca del coche (ej. Audi)
+	 * @param modelo Modelo del coche (ej. A3)
+	 * @param propietario Nombre del propietario del coche
+	 * @throws ObjetoErroneo Si la matricula o el modelo son nulos o estan vacios
+	 */
 	public Vehiculo(String matricula, String marca, String modelo, Cliente propietario) throws ObjetoErroneo {
 
 		this.matricula = matricula;
