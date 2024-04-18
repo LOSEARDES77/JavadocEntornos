@@ -40,8 +40,8 @@ public class Util<T> {
 	 */
 	public T[] inserta(T[] array, T t2) {
 		if (t2 != null) {
-			array = Arrays.copyOf(array, array.length + 1);
-			array[array.length - 1] = t2;
+			array = Arrays.copyOf(array, array.length + 1); // Crea un array más grande
+			array[array.length - 1] = t2; // Inserta el valor nuevo
 		}
 		return array;
 	}
@@ -57,9 +57,9 @@ public class Util<T> {
 			for (int i = 0; i < array.length; i++) {
 				if (array[i].equals(t2)) {
 					for (int j = i; j < array.length - 1; j++) {
-						array[j] = array[j + 1];
+						array[j] = array[j + 1]; // Desplaza los elementos
 					}
-					array = Arrays.copyOf(array, array.length - 1);
+					array = Arrays.copyOf(array, array.length - 1); // Crea un array más pequeño
 					break;
 				}
 			}

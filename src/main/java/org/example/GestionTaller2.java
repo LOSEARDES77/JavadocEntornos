@@ -106,6 +106,13 @@ public class GestionTaller2 {
 		return a1;
 	}
 
+	/**
+	 * Asigna un mecánico a una reparación
+	 * @param mecanicos Array de mecánicos
+	 * @param asignados Array de asignaciones
+	 * @param reps Array de reparaciones
+	 * @return El array de asignaciones
+	 */
 	private static Asigna[] asignaMecanico(Mecanico[] mecanicos, Asigna[] asignados, Reparacion[] reps) {//opción 6
 		Util<Asigna> a2 = new Util<>();
 		Util<Reparacion> r2 = new Util<>();
@@ -132,6 +139,11 @@ public class GestionTaller2 {
 		return asignados;
 	}
 
+	/**
+	 * Asigna piezas a una reparación
+	 * @param reps Array de reparaciones
+	 * @return La reparación a la que se le han asignado las piezas
+	 */
 	private static Reparacion asignaPiezas(Reparacion[] reps) {//opci�n 5
 		Util<Reparacion> r2 = new Util<>();
 		Reparacion r1;
@@ -152,6 +164,12 @@ public class GestionTaller2 {
 		return r1;
 	}
 
+	/**
+	 * Crea una reparación
+	 * @param coches Array de coches
+	 * @param reps Array de reparaciones
+	 * @return El array de reparaciones
+	 */
 	private static Reparacion[] creaReparacion(Vehiculo[] coches, Reparacion[] reps) {//opci�n 4
 		Util<Reparacion> r2 = new Util<>();
 		Util<Vehiculo> v2 = new Util<>();
@@ -179,6 +197,12 @@ public class GestionTaller2 {
 		return reps;
 	}
 
+
+	/**
+	 * Crea un mecánico
+	 * @param mecanicos Array de mecánicos
+	 * @return El array de mecánicos
+	 */
 	private static Mecanico[] creaMecanico(Mecanico[] mecanicos) {//opci�n 3
 		Util<Mecanico> m2 = new Util<>();
 		String nombre;
@@ -191,6 +215,11 @@ public class GestionTaller2 {
 		return mecanicos;
 	}
 
+	/**
+	 * Crea un cliente
+	 * @param clientes Array de clientes
+	 * @return El array de clientes
+	 */
 	private static Cliente[] creaCliente(Cliente[] clientes) {//opci�n 2
 		Util<Cliente> c2 = new Util<>();
 		String nombre;
@@ -212,7 +241,12 @@ public class GestionTaller2 {
 		}
 		return clientes;
 	}
-
+	/**
+	 * Crea un vehículo
+	 * @param coches Array de coches
+	 * @param clientes Array de clientes
+	 * @return El array de coches
+	 */
 	private static Vehiculo[] creaCoche(Vehiculo[] coches, Cliente[] clientes) {//opci�n 1
 		Util<Vehiculo> v2 = new Util<>();
 		Util<Cliente> c2 = new Util<>();
@@ -274,7 +308,12 @@ public class GestionTaller2 {
 		return coches;
 	}
 
-	//Carga inicial
+
+	/**
+	 * Carga los datos iniciales de los clientes
+	 * @param c Array de clientes
+	 * @return El array de clientes
+	 */
 	public static Cliente[] cargaInicialC(Cliente[] c) {
 		Util<Cliente> c2 = new Util<>();
 		try {
@@ -288,6 +327,11 @@ public class GestionTaller2 {
 		return c;
 	}
 
+	/**
+	 * Carga los datos iniciales de los mecánicos
+	 * @param m Array de mecánicos
+	 * @return El array de mecánicos
+	 */
 	public static Mecanico[] cargaInicialM(Mecanico[] m) {
 		Util<Mecanico> m2 = new Util<>();
 		try {
@@ -299,6 +343,12 @@ public class GestionTaller2 {
 		return m;
 	}
 
+	/**
+	 * Carga los datos iniciales de los vehículos
+	 * @param v Array de vehículos
+	 * @param c Array de clientes
+	 * @return El array de vehículos
+	 */
 	public static Vehiculo[] cargaInicialV(Vehiculo[] v, Cliente[] c) {
 		Util<Vehiculo> v2 = new Util<>();
 
@@ -310,7 +360,13 @@ public class GestionTaller2 {
 		return v;
 	}
 //Fin carga inicial
-	//B�squedas
+
+	/**
+	 * Busca un vehículo
+	 * @param v Array de vehículos
+	 * @param v1 Matrícula del vehículo
+	 * @return true si encuentra el vehículo, false si no lo encuentra
+	 */
 	public static boolean buscaVehiculo(Vehiculo[] v, String v1) {
 		for (Vehiculo vehiculo : v) {
 			if (vehiculo.getMatricula().equals(v1.toUpperCase())) {
@@ -320,6 +376,12 @@ public class GestionTaller2 {
 		return false;
 	}
 
+	/**
+	 * Busca un cliente
+	 * @param c Array de clientes
+	 * @param c1 Dni del cliente
+	 * @return true si encuentra el cliente, false si no lo encuentra
+	 */
 	public static boolean buscaCliente(Cliente[] c, String c1) {
 		for (Cliente cliente : c) {
 			if (cliente.getDni().equals(c1.toUpperCase())) {
@@ -329,6 +391,13 @@ public class GestionTaller2 {
 		return false;
 	}
 
+	/**
+	 * Busca una reparación
+	 * @param r Array de reparaciones
+	 * @param v1 Vehículo de la reparación
+	 * @param c Fecha de la reparación
+	 * @return true si encuentra la reparación, false si no la encuentra
+	 */
 	public static boolean buscaReparacion(Reparacion[] r, Vehiculo v1, Calendar c) {
 		for (Reparacion reparacion : r) {
 			if (reparacion.getCoche().equals(v1) && reparacion.getFecha().equals(c)) {
@@ -338,6 +407,12 @@ public class GestionTaller2 {
 		return false;
 	}
 
+	/**
+	 * Busca una asignación
+	 * @param a Array de asignaciones
+	 * @param a1 Asignación a buscar
+	 * @return true si encuentra la asignación, false si no la encuentra
+	 */
 	public static boolean buscaAsigna(Asigna[] a, Asigna a1) {
 		for (Asigna asigna : a) {
 			if (asigna.equals(a1)) {
