@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+
+
+/**
+ * Clase que gestiona un taller de reparaciones con datos de clientes, veh�culos y mec�nicos inicializados
+ */
 public class GestionTaller {
 
 	public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package org.example;
 
 /**
- * Documentado por Victor
+ * Clase abstracta Vehículo para la gestión de vehículos
  */
 
 public abstract class Vehiculo {

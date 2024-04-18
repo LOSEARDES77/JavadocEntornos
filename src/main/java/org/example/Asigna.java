@@ -1,5 +1,9 @@
 package org.example;
 
+
+/**
+ * Clase Asigna para la gestión de asignaciones de mecánicos a reparaciones
+ */
 public class Asigna {
 
 	private Reparacion reparacion;

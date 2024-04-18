@@ -1,5 +1,9 @@
 package org.example;
 
+
+/**
+ * Clase Industrial para la gestión de vehículos industriales
+ */
 public class Industrial extends Vehiculo {
 	
 	private String tipo;

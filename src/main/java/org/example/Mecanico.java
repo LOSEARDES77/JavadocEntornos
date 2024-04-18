@@ -1,7 +1,7 @@
 package org.example;
 
 /**
- * Documentado por Victor
+ * Clase Mecánico para la gestión de mecánicos
  */
 
 public class Mecanico {

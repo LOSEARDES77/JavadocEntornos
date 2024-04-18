@@ -1,5 +1,9 @@
 package org.example;
 
+/**
+ * Clase Cliente para la gestión de clientes
+ */
+
 public class Cliente {
 	private String dni;
 	private String nombre;
