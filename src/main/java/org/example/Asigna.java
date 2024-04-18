@@ -1,7 +1,17 @@
 package org.example;
 
-public class Asigna {
+/*
+ * La clase Asigna se encarga de asignar un mecanico a una reparacion,
+ * además de llevar un control de las horas que ha trabajado en ella.
+ */
 
+public class Asigna {
+	/**
+	 * Clase Asigna
+	 * @param reparacion
+	 * @param mecanico
+	 * @throws ObjetoErroneo
+	 */
 	private Reparacion reparacion;
 	private Mecanico mecanico;
 	private int horas;

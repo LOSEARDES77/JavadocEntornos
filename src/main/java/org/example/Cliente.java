@@ -1,6 +1,16 @@
 package org.example;
-
+/*
+ * La clase Cliente se encarga de gestionar los datos de los clientes.
+*/
 public class Cliente {
+	/**
+	 * Clase Cliente
+	 * @param dni
+	 * @param nombre
+	 * @param apellidos
+	 * @param telefono
+	 * @throws ObjetoErroneo
+	 */
 	private String dni;
 	private String nombre;
 	private String apellidos;
