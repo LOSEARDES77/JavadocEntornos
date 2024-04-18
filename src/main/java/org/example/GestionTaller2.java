@@ -3,7 +3,9 @@ package org.example;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-
+/**
+ * Clade de prueba gestión de un taller
+ */
 public class GestionTaller2 {
 
 	public static void main(String[] args) {

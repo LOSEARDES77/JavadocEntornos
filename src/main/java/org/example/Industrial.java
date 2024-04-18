@@ -1,8 +1,9 @@
 package org.example;
-/*
- * la clase Industrial hereda de Vehiculo y tiene los atributos tipo, peso y actividad,
- * además de los métodos get y set de cada atributo y el método toString.
-*/
+
+
+/**
+ * Clase Industrial para la gestión de vehículos industriales
+ */
 public class Industrial extends Vehiculo {
 	
 	private String tipo;

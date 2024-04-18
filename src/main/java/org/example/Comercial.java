@@ -1,7 +1,9 @@
 package org.example;
-/*
- * La clase Comercial se encarga de gestionar los datos de los vehículos comerciales.
+
+/**
+ * Clase Comercial para la gestión de vehículos comerciales
  */
+
 public class Comercial extends Vehiculo {
 
 	private String tipo;

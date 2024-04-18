@@ -3,7 +3,7 @@ package org.example;
 import java.util.Arrays;
 
 /**
- * Documentado por Victor
+ * Clase de utilidades para arrays
  */
 public class Util<T> {
 	T t1;

@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.PatternSyntaxException;
 
 /**
- * Documentado por Victor
+ * Clase para leer datos de teclado
  */
 public class Leer {
 

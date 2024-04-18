@@ -1,7 +1,9 @@
 package org.example;
-/*
- * La clase Cliente se encarga de gestionar los datos de los clientes.
-*/
+
+/**
+ * Clase Cliente para la gestión de clientes
+ */
+
 public class Cliente {
 	/**
 	 * Clase Cliente

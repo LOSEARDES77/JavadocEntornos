@@ -6,7 +6,7 @@ import java.util.Calendar;
 
 
 /**
- * Documentado por Victor
+ * Clase que representa una reparación
  */
 
 public class Reparacion {

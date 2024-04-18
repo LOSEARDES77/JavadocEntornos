@@ -3,9 +3,12 @@ package org.example;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-/*
- * La clase GestionTaller es la clase principal del programa y contiene el método main.
-*/
+
+
+
+/**
+ * Clase que gestiona un taller de reparaciones con datos de clientes, veh�culos y mec�nicos inicializados
+ */
 public class GestionTaller {
 
 	public static void main(String[] args) {

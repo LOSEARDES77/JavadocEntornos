@@ -1,10 +1,9 @@
 package org.example;
 
-/*
- * La clase Asigna se encarga de asignar un mecanico a una reparacion,
- * además de llevar un control de las horas que ha trabajado en ella.
- */
 
+/**
+ * Clase Asigna para la gestión de asignaciones de mecánicos a reparaciones
+ */
 public class Asigna {
 	/**
 	 * Clase Asigna
