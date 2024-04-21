@@ -3,7 +3,13 @@ package org.example;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-
+/**
+ *
+ * Autores de la documentación del proyecto de JavaDocumentación:
+ * @autor: Pablo Aller
+ * @autor: Victor Galán
+ * @autor: Bruno Guallar
+ */
 
 
 /**
