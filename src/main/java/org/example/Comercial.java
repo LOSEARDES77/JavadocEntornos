@@ -9,7 +9,18 @@ public class Comercial extends Vehiculo {
 	private String tipo;
 	private String combustible;
 	private int potencia;
-	
+
+	/**
+	 * Constructor de la clase Comercial
+	 * @param matricula
+	 * @param marca
+	 * @param modelo
+	 * @param propietario
+	 * @param tipo
+	 * @param combustible
+	 * @param potencia
+	 * @throws ObjetoErroneo
+	 */
 	public Comercial(String matricula, String marca, String modelo, Cliente propietario, String tipo,
 			String combustible, int potencia) throws ObjetoErroneo {
 		super(matricula, marca, modelo, propietario);

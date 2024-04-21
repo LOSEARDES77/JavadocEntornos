@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 /**
- * Clade de prueba gestión de un taller
+ * Clase de prueba gestión de un taller
  */
 public class GestionTaller2 {
 

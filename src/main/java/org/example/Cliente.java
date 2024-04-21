@@ -5,6 +5,14 @@ package org.example;
  */
 
 public class Cliente {
+	/**
+	 * Clase Cliente
+	 * @param dni
+	 * @param nombre
+	 * @param apellidos
+	 * @param telefono
+	 * @throws ObjetoErroneo
+	 */
 	private String dni;
 	private String nombre;
 	private String apellidos;
